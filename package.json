@@ -1,0 +1,32 @@
+{
+  "name": "confusion",
+  "version": "1.0.0",
+  "description": "Collection of Responsive web sites for a fictional Restaurant, 'conFusion'",
+  "main": "index.html",
+  "scripts": {
+    "start": "",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf dist",
+    "copyfonts": "copyfiles -f css/bootstrap/node_modules/font-awesome/css/* dist/font",
+    
+    "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html",
+    "build": "npm run clean && npm run copyfonts  && npm run usemin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akmiqdad/Ristorante-conFusion.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akmiqdad/Ristorante-conFusion/issues"
+  },
+  "homepage": "https://github.com/akmiqdad/Ristorante-conFusion#readme",
+  "devDependencies": {
+    "cssmin": "^0.4.3",
+    "htmlmin": "0.0.7",
+    "rimraf": "^2.6.2",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.5.1"
+  }
+}
