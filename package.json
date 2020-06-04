@@ -8,9 +8,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf dist",
     "copyfonts": "copyfiles -f css/bootstrap/node_modules/font-awesome/css/* dist/font",
-    
+    "imagemin": "imagemin img/* -o dist/img",
     "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html",
-    "build": "npm run clean && npm run copyfonts  && npm run usemin"
+    "build": "npm run clean && npm run copyfonts && npm run imagemin && npm run usemin"
   },
   "repository": {
     "type": "git",
