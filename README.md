@@ -1,2 +1,2 @@
 # Ristorante-conFusion
-Collection of Responsive web sites for a fictional Restaurant, 'conFusion'
+Collection of Responsive web pagesfor a fictional Restaurant, 'conFusion'
